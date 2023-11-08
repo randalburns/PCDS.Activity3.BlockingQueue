@@ -20,8 +20,12 @@ public class Consumer implements Runnable{
 
                 String item = queue.take();
 
-                // output if you're debugging 
+                // output if you're debugging for small data
                 System.out.println("take " + item);
+
+                // output if you're debugging for big data
+                // don't print string if you're getting big data
+//                System.out.println("take " + i);
 
                 // sleep can slow things down to make output understandable
 //                 Thread.sleep(1000);

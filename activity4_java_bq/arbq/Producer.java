@@ -22,6 +22,12 @@ public class Producer implements Runnable {
                 // a small string for testing
                 queue.put(Integer.toString(i));
 
+                // a large string for evaluation
+//                byte[] array = new byte[4096]; // length is bounded by 7
+//                new Random().nextBytes(array);
+//                String putstr = new String(array, Charset.forName("UTF-8"));
+//                queue.put(putstr);
+
                 // output if your debugging
                 System.out.println("put" + Integer.toString(i));
 
